@@ -1,39 +1,37 @@
-/* ------------------------- Обнуление встроенных отступов ------------------------- */
+/*FIRST__SETTINGS*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* ------------------------- Изменение всех ссылочных объектов ------------------------- */
 a{
     text-decoration: none;
+    transition: 500ms;
 }
 a:hover{
     transform: scale(1.1);
     opacity: 0.9;
 }
-/* ------------------------- Подключение шрифтов ------------------------- */
 @font-face {
     font-family: "Proxima";
-    src: url(../fonts/ProximaNova-Light.ttf);
+    src: url("../fonts/ProximaNova-Light.ttf") format("truetype");
     font-weight: 300;
 }
 @font-face {
     font-family: "Proxima";
-    src: url(../fonts/ProximaNova-Regular.ttf);
+    src: url("../fonts/ProximaNova-Regular.ttf") format("truetype");
     font-weight: 400;
 }
 @font-face {
     font-family: "Proxima";
-    src: url(../fonts/ProximaNova-Semibold.ttf);
+    src: url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
     font-weight: 600;
 }
 @font-face {
     font-family: "Proxima";
-    src: url(../fonts/ProximaNova-Bold.ttf);
+    src: url("../fonts/ProximaNova-Bold.ttf") format("truetype");
     font-weight: 700;
 }
-/* ------------------------- Настройка общего контейнера, указание используемого шрифта ------------------------- */
 body{
     display: flex;
     flex-direction: column;
@@ -43,7 +41,8 @@ body{
     background-color: #282b38;
     font-family: "Proxima", sans-serif;
 }
-/* ------------------------- Настройка хэдера ------------------------- */
+/*------------CONTENT------------*/
+/*HEADER*/
 header{
     display: flex;
     justify-content: space-between;
@@ -78,7 +77,7 @@ header nav a{
     height: 100px;
     background-color: #282b38;
 }
-/* ------------------------- Разметка первой секции, её элементов ------------------------- */
+/*S1*/
 .Sec1Div{
     height: 800px;
     width: 1920px;
@@ -117,7 +116,7 @@ h1{
 .Sec1Div a img{
     margin-left: 48px;
 }
-/* ------------------------- Разметка второй секции, её элементов ------------------------- */
+/*S2*/
 .Sec2Div{
     width: 1920px;
     height: 956px;
@@ -300,7 +299,7 @@ h1{
     font-weight: 600;
     margin-left: 50px;
 }
-/* ------------------------- Разметка третьей секции, её элементов ------------------------- */
+/*S3*/
 .Sec3Div{
     width: 1820px;
     height: 725px;
@@ -350,7 +349,7 @@ h1{
     height: 179px;
     margin-top: 58px;
 }
-/* ------------------------- Разметка четвертой секции, её элементов ------------------------- */
+/*S4*/
 .Sec4Div{
     width: 1311px;
     height: 794px;
@@ -395,10 +394,12 @@ h1{
     background-color: #363a4d;
     display: flex;
     flex-direction: column;
+    transition: 500ms;
 }
 .FrameSec4:hover{
     box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.26);
     cursor: pointer;
+    transform: scale(1.1);
 }
 .FrameSec4 h4{
     font-size: 22px;
@@ -441,7 +442,7 @@ h1{
     border-radius: 90px;
     margin-left: 14px;
 }
-/* ------------------------- Разметка пятой секции, её элементов ------------------------- */
+/*S5*/
 .Sec5Div{
     width: 1920px;
     background-color: #363a4d;
@@ -477,10 +478,12 @@ h1{
 }
 .GeneralDivService div{
     border-radius: 20px;
+    transition: 500ms;
 }
 .GeneralDivService div:hover{
     box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.26);
     cursor: pointer;
+    transform: scale(1.1);
 }
 .DeffendDiv{
     width: 360px;
@@ -520,11 +523,12 @@ h1{
     display: flex;
     width: 140px;
     height: 50px;
+    transition: 500ms;
 }
 .Sec5Div .GeneralDivService div a:hover{
     transform: scale(1.1);
 }
-/* ------------------------- Разметка шестой секции, её элементов ------------------------- */
+/*S6*/
 .Sec6Div{
     width: 1920px;
     height: 1490px;
@@ -579,6 +583,7 @@ h1{
     align-items: center;
     border-radius: 10px;
     margin-bottom: 16px;
+    transition: 500ms;
 }
 .QuestionsSec6 .TextQuestion .QuestionAndArrow{
     background-color: transparent;
@@ -672,7 +677,7 @@ h1{
     font-size: 16px;
     font-weight: 600;
 }
-/* ------------------------- Разметка седьмой секции, её элементов ------------------------- */
+/*S7*/
 .Sec7Div{
     width: 1820px;
     margin-left: 50px;
@@ -743,7 +748,7 @@ h1{
     padding: 0 20px 0 33px;
     margin-left: 62px;
 }
-/* ------------------------- Разметка подвала сайта, его элементов ------------------------- */
+/*FOOTER*/
 footer{
     width: 1920px;
     padding: 70px 390px 0 390px;
@@ -780,6 +785,7 @@ footer nav{
 }
 .GeneralDivFooter div a{
     color: white;
+    transition: 500ms;
 }
 footer a{
     text-decoration: underline;
@@ -787,6 +793,7 @@ footer a{
 footer nav a{
     color: #85899c;
     margin-top: 16px;
+    transition: 500ms;
 }
 footer h4{
     font-size: 20px;
